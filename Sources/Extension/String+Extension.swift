@@ -10,10 +10,8 @@ import Foundation
 extension String {
 
     var localized: String {
-        let path = Bundle.module.path(forResource: "ja", ofType: "lproj")
-        print("Current package language: \(Locale.current.languageCode)")
-        print("Current device language in package: \(UserDefaults.standard.string(forKey: "LCLCurrentLanguageKey"))")
-        let bundle = Bundle(path: path!)!
+        guard let path = Bundle.module.path(forResource: UserDefaults.standard.string(forKey: "LCLCurrentLanguageKey") ?? Locale.current.languageCode, ofType: "lproj") else { return ""}
+        guard let bundle = Bundle(path: path) else { return "" }
         return NSLocalizedString(self, bundle: bundle, comment: "")
     }
     
