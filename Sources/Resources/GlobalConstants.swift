@@ -10,16 +10,16 @@ import Foundation
 struct GlobalConstants {
     
     struct Localization {
-        static let settings = "Settings"
-        static let allow_camera = "Allow Camera"
-        static let camera_required = "Camera access required for capturing photos!"
-        static let allow_library = "Allow Library"
-        static let library_required = "Library access required for using photos in library!"
-        static let important = "IMPORTANT"
-        static let take_photo = "Take photo"
-        static let camera_roll = "Camera roll"
-        static let photo_library = "Photo library"
-        static let cancel = "Cancel"
+        static let settings = "settings".localized
+        static let allow_camera = "allow_camera".localized
+        static let camera_required = "camera_required".localized
+        static let allow_library = "allow_library".localized
+        static let library_required = "library_required".localized
+        static let important = "important".localized
+        static let take_photo = "take_photo".localized
+        static let camera_roll = "camera_roll".localized
+        static let photo_library = "photo_library".localized
+        static let cancel = "cancel".localized
     }
     
 }

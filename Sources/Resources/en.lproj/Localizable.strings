@@ -1,0 +1,10 @@
+"settings" = "Settings";
+"allow_camera" = "Allow Camera";
+"camera_required" = "Camera access required for capturing photos!";
+"allow_library" = "Allow Library";
+"library_required" = "Library access required for using photos in library!";
+"important" = "IMPORTANT";
+"take_photo" = "Take photo";
+"camera_roll" = "Camera roll";
+"photo_library" = "Photo library";
+"cancel" = "Cancel";

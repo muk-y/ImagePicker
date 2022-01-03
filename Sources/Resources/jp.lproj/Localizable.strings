@@ -1,0 +1,10 @@
+"settings" = "設定";
+"allow_camera" = "カメラへのアクセスを許可する";
+"camera_required" = "カメラへのアクセスが必要です";
+"allow_library" = "カメラロールへのアクセスを許可する";
+"library_required" = "カメラロールへのアクセスが必要です";
+"important" = "重要";
+"take_photo" = "写真を撮る";
+"camera_roll" = "カメラロール";
+"photo_library" = "フォトライブラリ";
+"text_cancel" = "キャンセル";
