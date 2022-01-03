@@ -10,7 +10,7 @@ import Foundation
 extension String {
 
     var localized: String {
-        return NSLocalizedString(self, bundle: .main, comment: "")
+        return NSLocalizedString(self, bundle: .module, comment: "")
     }
     
  }
