@@ -62,7 +62,9 @@ public class ImagePicker: NSObject {
                 alert.addAction(UIAlertAction(title: type.allowTitle, style: .default, handler: { (alert) -> Void in
                     UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
                 }))
-                presentationController?.presentFullScreen(alert, animated: true)
+                DispatchQueue.main.async { [weak self] in
+                    self?.presentationController?.presentFullScreen(alert, animated: true)
+                }
             }
             
             pickerController.sourceType = type

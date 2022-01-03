@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ImagePicker",
+        "repositoryURL": "https://github.com/muk-y/ImagePicker.git",
+        "state": {
+          "branch": "main",
+          "revision": "e41db1e7d7db573a693cb8b89848f7d74fbd832c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
