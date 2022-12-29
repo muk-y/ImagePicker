@@ -92,6 +92,7 @@ public class ImagePicker: NSObject {
                     return
                 case .denied:
                     alertToEncourageAccessInitially(for: .library)
+                    return
                 case .limited,
                      .restricted:
                     break
