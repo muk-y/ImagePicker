@@ -124,9 +124,9 @@ public class ImagePicker: NSObject {
         if let action = self.action(for: .camera, title: GlobalConstants.Localization.take_photo) {
             alertController.addAction(action)
         }
-        if let action = self.action(for: .savedPhotosAlbum, title: GlobalConstants.Localization.camera_roll) {
-            alertController.addAction(action)
-        }
+//         if let action = self.action(for: .savedPhotosAlbum, title: GlobalConstants.Localization.camera_roll) {
+//             alertController.addAction(action)
+//         }
         if let action = self.action(for: .photoLibrary, title: GlobalConstants.Localization.photo_library) {
             alertController.addAction(action)
         }
