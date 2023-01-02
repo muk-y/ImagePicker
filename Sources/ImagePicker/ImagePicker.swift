@@ -75,17 +75,11 @@ public class ImagePicker: NSObject {
                 case .notDetermined:
                     PHPhotoLibrary.requestAuthorization({ status in
                         switch status {
-                        case .denied:
-                            alertToEncourageAccessInitially(for: .library)
                         case .authorized:
                             DispatchQueue.main.async { [weak self] in
                                 self?.presentationController?.presentFullScreen(pickerController, animated: true)
                             }
-                        case .limited,
-                             .notDetermined,
-                             .restricted:
-                            break
-                        @unknown default:
+                        default:
                             break
                         }
                     })
@@ -93,22 +87,17 @@ public class ImagePicker: NSObject {
                 case .denied:
                     alertToEncourageAccessInitially(for: .library)
                     return
-                case .limited,
-                     .restricted:
-                    break
                 case .authorized:
                     presentationController?.presentFullScreen(self.pickerController, animated: true)
-                @unknown default:
+                default:
                     break
                 }
             case .camera:
                 let authStatus = AVCaptureDevice.authorizationStatus(for: AVMediaType.video)
                 switch authStatus {
-                case .authorized: break
                 case .denied:
                     alertToEncourageAccessInitially(for: .camera)
                     return
-                case .notDetermined: break
                 default: break
                 }
             case .savedPhotosAlbum: break
