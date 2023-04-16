@@ -77,6 +77,7 @@ public class ImagePicker: NSObject {
                         switch status {
                         case .authorized:
                             DispatchQueue.main.async { [weak self] in
+                                guard let pickerController = self?.pickerController else { return }
                                 self?.presentationController?.presentFullScreen(pickerController, animated: true)
                             }
                         default:
